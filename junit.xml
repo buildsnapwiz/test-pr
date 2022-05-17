@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="82" failures="0" errors="0" time="40.628">
-  <testsuite name="Test scoreItem utils" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:28" time="5.783" tests="6">
-    <testcase classname="Test scoreItem utils #scoreTestItem Test for bubblesheet - correct" name="Test scoreItem utils #scoreTestItem Test for bubblesheet - correct" time="0.009">
+<testsuites name="jest tests" tests="70" failures="0" errors="0" time="36.76">
+  <testsuite name="Test scoreItem utils" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:26" time="5.979" tests="6">
+    <testcase classname="Test scoreItem utils #scoreTestItem Test for bubblesheet - correct" name="Test scoreItem utils #scoreTestItem Test for bubblesheet - correct" time="0.008">
     </testcase>
     <testcase classname="Test scoreItem utils #scoreTestItem Test for bubblesheet - wrong" name="Test scoreItem utils #scoreTestItem Test for bubblesheet - wrong" time="0.002">
     </testcase>
@@ -14,64 +14,16 @@
     <testcase classname="Test scoreItem utils #isSkippedQuestion Test for bubblesheet - mcq_(responses=2))" name="Test scoreItem utils #isSkippedQuestion Test for bubblesheet - mcq_(responses=2))" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Testing Group controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:35" time="1.82" tests="12">
-    <testcase classname="Testing Group controller Testing #findAndUpdateExistingGroup test for successfully update" name="Testing Group controller Testing #findAndUpdateExistingGroup test for successfully update" time="0.011">
+  <testsuite name="Testing Enrollment controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:32" time="1.616" tests="9">
+    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if group is not present" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if group is not present" time="0.004">
     </testcase>
-    <testcase classname="Testing Group controller Testing #findAndUpdateExistingGroup test for duplicate class code -&gt; regenerate new code" name="Testing Group controller Testing #findAndUpdateExistingGroup test for duplicate class code -&gt; regenerate new code" time="0.027">
+    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if current teacher is not part of the class" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if current teacher is not part of the class" time="0.014">
     </testcase>
-    <testcase classname="Testing Group controller Testing #getMyGroups test for assignment count" name="Testing Group controller Testing #getMyGroups test for assignment count" time="0.005">
+    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #adding one student to the class" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #adding one student to the class" time="0.014">
     </testcase>
-    <testcase classname="Testing Group controller Testing #getMyGroups test for no group found" name="Testing Group controller Testing #getMyGroups test for no group found" time="0.002">
+    <testcase classname="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student does not have an enrollment" name="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student does not have an enrollment" time="0.004">
     </testcase>
-    <testcase classname="Testing Group controller Testing #archiveGroupBasedOnEndDateChange test for no change in class end date if new enddate &lt; 45 days" name="Testing Group controller Testing #archiveGroupBasedOnEndDateChange test for no change in class end date if new enddate &lt; 45 days" time="0.001">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #archiveGroupBasedOnEndDateChange test for arcgive existing class if new enddate &gt; 45 days" name="Testing Group controller Testing #archiveGroupBasedOnEndDateChange test for arcgive existing class if new enddate &gt; 45 days" time="0.002">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #generateValidGroupCode test for generated class code length and V2 prefix" name="Testing Group controller Testing #generateValidGroupCode test for generated class code length and V2 prefix" time="0.002">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #isPartOfGroup test for district admin groups where districtId match in 1 group" name="Testing Group controller Testing #isPartOfGroup test for district admin groups where districtId match in 1 group" time="0.005">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #isPartOfGroup test for district admin groups where districtId no match group" name="Testing Group controller Testing #isPartOfGroup test for district admin groups where districtId no match group" time="0.003">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #isPartOfGroup test for school admin groups where institutionId match in 1 group" name="Testing Group controller Testing #isPartOfGroup test for school admin groups where institutionId match in 1 group" time="0.003">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #isPartOfGroup test for teacher groups where owners match in 1 group" name="Testing Group controller Testing #isPartOfGroup test for teacher groups where owners match in 1 group" time="0.003">
-    </testcase>
-    <testcase classname="Testing Group controller Testing #isPartOfGroup test for other role user groups" name="Testing Group controller Testing #isPartOfGroup test for other role user groups" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="Test Assignment controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:37" time="1.54" tests="4">
-    <testcase classname="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_0" name="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_0" time="0.002">
-    </testcase>
-    <testcase classname="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_1" name="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_1" time="0.001">
-    </testcase>
-    <testcase classname="Test Assignment controller #generateBubbleSheetQR without existing lookup doc" name="Test Assignment controller #generateBubbleSheetQR without existing lookup doc" time="0.031">
-    </testcase>
-    <testcase classname="Test Assignment controller #generateBubbleSheetQR with existing lookup doc" name="Test Assignment controller #generateBubbleSheetQR with existing lookup doc" time="0.008">
-    </testcase>
-  </testsuite>
-  <testsuite name="Testing parent controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:39" time="1.576" tests="5">
-    <testcase classname="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when alreday there is a open invitation" name="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when alreday there is a open invitation" time="0.005">
-    </testcase>
-    <testcase classname="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when there is no open invitation" name="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when there is no open invitation" time="0.011">
-    </testcase>
-    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code does not exist in db" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code does not exist in db" time="0.002">
-    </testcase>
-    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is expired" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is expired" time="0.003">
-    </testcase>
-    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is not expired" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is not expired" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="Testing Enrollment controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:42" time="1.554" tests="9">
-    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if group is not present" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if group is not present" time="0.002">
-    </testcase>
-    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if current teacher is not part of the class" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #if current teacher is not part of the class" time="0.007">
-    </testcase>
-    <testcase classname="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #adding one student to the class" name="Testing Enrollment controller Testing #enrollMultipleStudent in enrollment controller tests #adding one student to the class" time="0.004">
-    </testcase>
-    <testcase classname="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student does not have an enrollment" name="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student does not have an enrollment" time="0.003">
-    </testcase>
-    <testcase classname="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student has an enrollment" name="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student has an enrollment" time="0.005">
+    <testcase classname="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student has an enrollment" name="Testing Enrollment controller Testing #getStudentEnrollmentDetails in enrollment controller tests #if the student has an enrollment" time="0.006">
     </testcase>
     <testcase classname="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #if group does not exist" name="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #if group does not exist" time="0.002">
     </testcase>
@@ -79,10 +31,42 @@
     </testcase>
     <testcase classname="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove student enrollment" name="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove student enrollment" time="0.004">
     </testcase>
-    <testcase classname="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove teacher enrollment" name="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove teacher enrollment" time="0.012">
+    <testcase classname="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove teacher enrollment" name="Testing Enrollment controller Testing #removeUserEnrollments in enrollment controller tests #remove teacher enrollment" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="Testing #updateWrongPasswordAttemptAttributes in user controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:44" time="1.457" tests="6">
+  <testsuite name="Testing Canvas controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:35" time="1.711" tests="4">
+    <testcase classname="Testing Canvas controller tests #startCanvasSync without enabling 1 to 1 mapping" name="Testing Canvas controller tests #startCanvasSync without enabling 1 to 1 mapping" time="0.02">
+    </testcase>
+    <testcase classname="Testing Canvas controller tests #startCanvasSync with enabling 1 to 1 mapping" name="Testing Canvas controller tests #startCanvasSync with enabling 1 to 1 mapping" time="0.004">
+    </testcase>
+    <testcase classname="Testing Canvas controller tests #syncAllCourseSections without enabling 1 to 1 mapping" name="Testing Canvas controller tests #syncAllCourseSections without enabling 1 to 1 mapping" time="0.045">
+    </testcase>
+    <testcase classname="Testing Canvas controller tests #syncAllCourseSections with enabling 1 to 1 mapping" name="Testing Canvas controller tests #syncAllCourseSections with enabling 1 to 1 mapping" time="0.032">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test Assignment controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:37" time="1.392" tests="4">
+    <testcase classname="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_0" name="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_0" time="0.002">
+    </testcase>
+    <testcase classname="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_1" name="Test Assignment controller #getBubbleSheetQrIds doc with multiple groups - group_1" time="0.001">
+    </testcase>
+    <testcase classname="Test Assignment controller #generateBubbleSheetQR without existing lookup doc" name="Test Assignment controller #generateBubbleSheetQR without existing lookup doc" time="0.027">
+    </testcase>
+    <testcase classname="Test Assignment controller #generateBubbleSheetQR with existing lookup doc" name="Test Assignment controller #generateBubbleSheetQR with existing lookup doc" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing parent controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:39" time="1.443" tests="5">
+    <testcase classname="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when alreday there is a open invitation" name="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when alreday there is a open invitation" time="0.004">
+    </testcase>
+    <testcase classname="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when there is no open invitation" name="Testing parent controller Testing #sendParentInvitation in parent controller tests #send invitation when there is no open invitation" time="0.021">
+    </testcase>
+    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code does not exist in db" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code does not exist in db" time="0.002">
+    </testcase>
+    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is expired" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is expired" time="0.002">
+    </testcase>
+    <testcase classname="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is not expired" name="Testing parent controller Testing #linkParentWithChildren in parent controller tests #invitation code is not expired" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing #updateWrongPasswordAttemptAttributes in user controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:41" time="1.537" tests="6">
     <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #1st wrong login attempt" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #1st wrong login attempt" time="0.003">
     </testcase>
     <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #correct login attempt when wrong login attempt count is less than 5" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #correct login attempt when wrong login attempt count is less than 5" time="0.002">
@@ -91,36 +75,66 @@
     </testcase>
     <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #correct login attempt when wrong login attempt count is 5 after 24 hrs" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #correct login attempt when wrong login attempt count is 5 after 24 hrs" time="0.002">
     </testcase>
-    <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 within 24 hrs" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 within 24 hrs" time="0.001">
+    <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 within 24 hrs" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 within 24 hrs" time="0.002">
     </testcase>
-    <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 after 24 hrs" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 after 24 hrs" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="Test TestActivity controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:46" time="1.638" tests="1">
-    <testcase classname="Test TestActivity controller #getScoreOfTheItem test scoreTestItem is called" name="Test TestActivity controller #getScoreOfTheItem test scoreTestItem is called" time="0.003">
+    <testcase classname="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 after 24 hrs" name="Testing #updateWrongPasswordAttemptAttributes in user controller tests #incorrect login attempt when wrong login attempt count is 5 after 24 hrs" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Testing Canvas controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:49" time="1.567" tests="4">
-    <testcase classname="Testing Canvas controller tests #startCanvasSync without enabling 1 to 1 mapping" name="Testing Canvas controller tests #startCanvasSync without enabling 1 to 1 mapping" time="0.013">
-    </testcase>
-    <testcase classname="Testing Canvas controller tests #startCanvasSync with enabling 1 to 1 mapping" name="Testing Canvas controller tests #startCanvasSync with enabling 1 to 1 mapping" time="0.004">
-    </testcase>
-    <testcase classname="Testing Canvas controller tests #syncAllCourseSections without enabling 1 to 1 mapping" name="Testing Canvas controller tests #syncAllCourseSections without enabling 1 to 1 mapping" time="0.075">
-    </testcase>
-    <testcase classname="Testing Canvas controller tests #syncAllCourseSections with enabling 1 to 1 mapping" name="Testing Canvas controller tests #syncAllCourseSections with enabling 1 to 1 mapping" time="0.044">
+  <testsuite name="Test TestActivity controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:44" time="1.577" tests="1">
+    <testcase classname="Test TestActivity controller #getScoreOfTheItem test scoreTestItem is called" name="Test TestActivity controller #getScoreOfTheItem test scoreTestItem is called" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Test Scanner controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:51" time="1.557" tests="4">
+  <testsuite name="Test Scanner controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:46" time="1.308" tests="4">
     <testcase classname="Test Scanner controller #getQuestionMetadataForOmrScanner get for single question" name="Test Scanner controller #getQuestionMetadataForOmrScanner get for single question" time="0.005">
     </testcase>
     <testcase classname="Test Scanner controller #scoreBubbleSheetAnswers test 1" name="Test Scanner controller #scoreBubbleSheetAnswers test 1" time="0.008">
     </testcase>
-    <testcase classname="Test Scanner controller #scanBubbleSheet test api success" name="Test Scanner controller #scanBubbleSheet test api success" time="0.001">
+    <testcase classname="Test Scanner controller #scanBubbleSheet test api success" name="Test Scanner controller #scanBubbleSheet test api success" time="0.002">
     </testcase>
-    <testcase classname="Test Scanner controller #scanBubbleSheet test api error" name="Test Scanner controller #scanBubbleSheet test api error" time="0.001">
+    <testcase classname="Test Scanner controller #scanBubbleSheet test api error" name="Test Scanner controller #scanBubbleSheet test api error" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Test testItem utils" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:53" time="0.336" tests="7">
+  <testsuite name="Testing school controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:48" time="0.393" tests="4">
+    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user deleting the school which he is not partof" name="Testing school controller Testing #deleteSchool in school controller tests #if user deleting the school which he is not partof" time="0.009">
+    </testcase>
+    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of only one school and trying to remove the school." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of only one school and trying to remove the school." time="0.003">
+    </testcase>
+    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has active class." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has active class." time="0.003">
+    </testcase>
+    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has no active class." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has no active class." time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing District controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:48" time="0.612" tests="4">
+    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is not an email pattern" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is not an email pattern" time="0.002">
+    </testcase>
+    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern" time="0.001">
+    </testcase>
+    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivate" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivate" time="0.002">
+    </testcase>
+    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivated" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivated" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test BubbleSheetQRLookUp model" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:49" time="0.439" tests="2">
+    <testcase classname="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc exists" name="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc exists" time="0.004">
+    </testcase>
+    <testcase classname="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc doesn&apos;t exist" name="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc doesn&apos;t exist" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing DistrictSettings controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:49" time="0.396" tests="3">
+    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is empty" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is empty" time="0.002">
+    </testcase>
+    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is clever" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is clever" time="0.002">
+    </testcase>
+    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is atlas" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is atlas" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing Org controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:50" time="0.369" tests="2">
+    <testcase classname="Testing Org controller tests #studentComesUnderTeacher positive result " name="Testing Org controller tests #studentComesUnderTeacher positive result " time="0.004">
+    </testcase>
+    <testcase classname="Testing Org controller tests #studentComesUnderTeacher positive result " name="Testing Org controller tests #studentComesUnderTeacher positive result " time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test testItem utils" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:50" time="0.308" tests="7">
     <testcase classname="Test testItem utils #calculateTotalScore() should sum up the score of questions" name="Test testItem utils #calculateTotalScore() should sum up the score of questions" time="0.002">
     </testcase>
     <testcase classname="Test testItem utils #calculateTotalScore() should be resilient to missing fields" name="Test testItem utils #calculateTotalScore() should be resilient to missing fields" time="0.002">
@@ -131,60 +145,20 @@
     </testcase>
     <testcase classname="Test testItem utils #isAutogradable non-mcqs - w/o bubblesheet" name="Test testItem utils #isAutogradable non-mcqs - w/o bubblesheet" time="0.001">
     </testcase>
-    <testcase classname="Test testItem utils #isAutogradable only mcq - w/ bubblesheet" name="Test testItem utils #isAutogradable only mcq - w/ bubblesheet" time="0.01">
+    <testcase classname="Test testItem utils #isAutogradable only mcq - w/ bubblesheet" name="Test testItem utils #isAutogradable only mcq - w/ bubblesheet" time="0.001">
     </testcase>
     <testcase classname="Test testItem utils #isAutogradable mcq + non-mcq - w/ bubblesheet" name="Test testItem utils #isAutogradable mcq + non-mcq - w/ bubblesheet" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Testing Term controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:54" time="0.601" tests="3">
+  <testsuite name="Testing Term controller" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:51" time="0.592" tests="3">
     <testcase classname="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term exist" name="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term exist" time="0.003">
     </testcase>
-    <testcase classname="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district does not have any existing term" name="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district does not have any existing term" time="0.006">
+    <testcase classname="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district does not have any existing term" name="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district does not have any existing term" time="0.007">
     </testcase>
-    <testcase classname="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district have existing term" name="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district have existing term" time="0.005">
-    </testcase>
-  </testsuite>
-  <testsuite name="Testing District controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:54" time="0.574" tests="4">
-    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is not an email pattern" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is not an email pattern" time="0.002">
-    </testcase>
-    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern" time="0.001">
-    </testcase>
-    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivate" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivate" time="0.002">
-    </testcase>
-    <testcase classname="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivated" name="Testing District controller Testing #replaceAndGetUserNamePattern in district controller tests #username is with email pattern and its appened with .deactivated" time="0.002">
+    <testcase classname="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district have existing term" name="Testing Term controller Testing #getDistrictCurrentTerm in term controller tests #if current term does not exist and district have existing term" time="0.007">
     </testcase>
   </testsuite>
-  <testsuite name="Testing Org controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:55" time="0.376" tests="2">
-    <testcase classname="Testing Org controller tests #studentComesUnderTeacher positive result " name="Testing Org controller tests #studentComesUnderTeacher positive result " time="0.004">
-    </testcase>
-    <testcase classname="Testing Org controller tests #studentComesUnderTeacher positive result " name="Testing Org controller tests #studentComesUnderTeacher positive result " time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="Testing DistrictSettings controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:56" time="0.393" tests="3">
-    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is empty" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is empty" time="0.002">
-    </testcase>
-    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is clever" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is clever" time="0.002">
-    </testcase>
-    <testcase classname="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is atlas" name="Testing DistrictSettings controller Testing #getSyncProviderName in term controller tests #entity is atlas" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="Testing school controller" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:56" time="0.796" tests="4">
-    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user deleting the school which he is not partof" name="Testing school controller Testing #deleteSchool in school controller tests #if user deleting the school which he is not partof" time="0.015">
-    </testcase>
-    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of only one school and trying to remove the school." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of only one school and trying to remove the school." time="0.002">
-    </testcase>
-    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has active class." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has active class." time="0.003">
-    </testcase>
-    <testcase classname="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has no active class." name="Testing school controller Testing #deleteSchool in school controller tests #if user is part of multiple school and trying to remove school which has no active class." time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="Test BubbleSheetQRLookUp model" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:57" time="0.129" tests="2">
-    <testcase classname="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc exists" name="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc exists" time="0.003">
-    </testcase>
-    <testcase classname="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc doesn&apos;t exist" name="Test BubbleSheetQRLookUp model test getByAssignmentIdAndTestId doc doesn&apos;t exist" time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="#getAllTheTestTypes()" errors="0" failures="0" skipped="0" timestamp="2022-05-13T11:45:57" time="0.058" tests="6">
+  <testsuite name="#getAllTheTestTypes()" errors="0" failures="0" skipped="0" timestamp="2022-05-17T03:18:51" time="0.06" tests="6">
     <testcase classname="#getAllTheTestTypes() should return all test types" name="#getAllTheTestTypes() should return all test types" time="0.001">
     </testcase>
     <testcase classname="#getDefaultBandByTestType() should return assessment band" name="#getDefaultBandByTestType() should return assessment band" time="0.001">
@@ -195,7 +169,7 @@
     </testcase>
     <testcase classname="#getDefaultBandByTestType() should return practice band for quiz types" name="#getDefaultBandByTestType() should return practice band for quiz types" time="0.001">
     </testcase>
-    <testcase classname="#getDefaultBandByTestType() should return practice band for homework types" name="#getDefaultBandByTestType() should return practice band for homework types" time="0.001">
+    <testcase classname="#getDefaultBandByTestType() should return practice band for homework types" name="#getDefaultBandByTestType() should return practice band for homework types" time="0.006">
     </testcase>
   </testsuite>
 </testsuites>
