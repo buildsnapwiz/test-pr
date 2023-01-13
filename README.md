@@ -1,2 +1,2 @@
 # test-pr
-project to test pr automation
+ project to test pr automation
